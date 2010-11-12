@@ -1,5 +1,3 @@
-package jbuttonattack;
-
 import javax.swing.*;
 import java.awt.*;
 
