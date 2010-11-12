@@ -1,11 +1,14 @@
+package Game;
+
 
 /**
  *
  * @author Kobran
  */
-public class BattleInterface {
+public class UserInterface {
     private GameLogic logic;
-    public BattleInterface(GameLogic logic){
+
+    public UserInterface(GameLogic logic){
         this.logic = logic;
     }
 }
