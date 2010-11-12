@@ -5,7 +5,7 @@ import java.awt.*;
  *
  * @author Kobran
  */
-public class characterInterface {
+public class CharacterInterface {
 
     private JFrame frame = new JFrame();
     private JLabel lblName = new JLabel("Name: ");
@@ -21,7 +21,7 @@ public class characterInterface {
     private JPanel pnlStats = new JPanel(new GridLayout(9, 1));
     private JPanel pnlFrame = new JPanel(new GridLayout(2, 1));
 
-    public characterInterface(Character character) {
+    public CharacterInterface(Character character) {
         int stats[] = character.getStats();
         int health[] = character.getHealth();
         this.lblName.setText(this.lblName.getText() + character.getName());
