@@ -1,6 +1,5 @@
 package Game;
 
-
 /**
  *
  * @author Kobran
@@ -13,6 +12,8 @@ public class Character {
     private byte CON;
     private byte INT;
     private byte WIS;
+    //Funderar på att lagra attribut i en array istället
+    //private byte[] attributes = { str, dex etc };
     private String name;
     private int maxHealthPoints;
     private int healthPoints;
