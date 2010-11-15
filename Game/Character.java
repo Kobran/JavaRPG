@@ -18,6 +18,8 @@ public class Character {
     private int healthPoints;
     private int armorClass;
     private int healthBonus;
+    private float capacity;
+    private Inventory inventory;
 
     public Character(String name) {
         this.name = name;
@@ -28,9 +30,11 @@ public class Character {
         this.INT = 6;
         this.WIS = 6;
         this.healthBonus = 0;
+        this.capacity = 20;
         this.armorClass = 10 + (this.DEX / 4) + (this.WIS / 5);
         this.maxHealthPoints = 15 + ((this.CON / 3) * 2 + (this.STR / 4));
         this.healthPoints = maxHealthPoints;
+        this.inventory = new Inventory(this);
     }
 
     public Character(byte str, byte dex, byte cha, byte con, byte INT, byte wis, String name) {
@@ -50,6 +54,10 @@ public class Character {
     public int[] getStats() {
         int[] stats = {this.STR, this.DEX, this.CON, this.INT, this.WIS, this.CHA, this.armorClass};
         return stats;
+    }
+
+    public float getCapacity() {
+        return this.capacity;
     }
 
     public int[] getHealth() {
