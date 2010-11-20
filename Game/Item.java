@@ -12,12 +12,15 @@ public class Item {
     private int[] attributeRequirements;
     private String identifier;
 
+    public Item() {
+    }
+
     public Item(String name, String description, float weight, int[] attributeRequirements) {
         this.name = name;
         this.description = description;
         this.attributeRequirements = attributeRequirements;
         this.weight = weight;
-        this.identifier = (name+description);
+        this.identifier = (name + description);
     }
 
     public String getName() {

@@ -87,4 +87,8 @@ public class Character {
         System.out.println("Wisdom: " + this.WIS);
 
     }
+
+    public String toString(){
+        return this.name;
+    }
 }
